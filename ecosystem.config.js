@@ -1,7 +1,13 @@
 module.exports = {
   apps : [{
+    name : 'event app',
     script: 'app.js',
-    watch: '.'
+    env_production: {
+      NODE_ENV: "production"
+   },
+   env_development: {
+      NODE_ENV: "development"
+   }
   }],
 
   deploy : {
