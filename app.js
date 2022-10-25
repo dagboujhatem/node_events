@@ -8,8 +8,8 @@ const passport = require('passport')
 const passportSetup = require('./config/passport-setup')
 
 // helmet config
-const helmet = require('helmet');
-app.use(helmet());
+// const helmet = require('helmet');
+// app.use(helmet());
 // bring ejs template
 
 app.set('view engine', 'ejs')
