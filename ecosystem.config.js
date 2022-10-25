@@ -6,6 +6,12 @@ module.exports = {
 
   deploy : {
     production : {
+      // SSH key path, default to $HOME/.ssh
+      // Exemple ==> key: "/path/to/some.pem",
+      // Steps to configure ssh
+      // 1. genarate ssh pair in your computer & in the server
+      // 2. save your public key (of your computer) in the "authorized_keys" of the server
+      key: "C:\Users\Nitro/.ssh/id_rsa.pub",
       // SSH user
       user : 'root',
       // SSH host
